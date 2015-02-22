@@ -1,0 +1,74 @@
+<!doctype html>
+<meta charset = "UTF-8">
+
+<html>
+	<head>
+	<title></title>
+	<link rel = "stylesheet"  type = "text/css" href = "report.css">
+	
+	</head>
+	
+	<body>
+		
+		<div id = 'main'>
+			<br>
+			<h1>The Technology Stack of Airbnb</h1>
+			<br>
+			<p>
+				Airbnb began with a relatively simple idea. Create a listing that allows people to rent space in their homes to people looking for short-term stays. Airbnb expanded quickly and has since evolved far beyond a simple listing into a large, multi-featured web application with millions of users spread across many countries. Airbnb has a number of challenges related to both it's scale and it's scope. These challenges have shaped the diverse and expansive technology stacks upon which Airbnb is built.
+			</p>
+			
+			<p>
+				Millions of decentralized users requires a large and reliable infrastructure. Airbnb runs on Amazon Web Services across over 200 EC2 instances.  At first, airbnb relied mostly on a combination of Amazon cloud services to manage it's traffic and data. Amazon elastic load balancing distributed traffic, Amazon RDS maintained Airbnb's MySQL databases. Amazon's implementation of Hadoop, known as Amazon Elastic Map Reduce, together with Amazon Simple Storage allowed for the distributed storage and processing of Airbnb's extremely large user driven data sets. Nginx, Ruby on Rails and client side Backbone.js together with Apache Pig and Apache Hive for data querying constituted the majority of Airbnb's application stack.
+			</p>
+			
+			<p>
+				As Airbnb grew it began to incorporate new environments such as IOS and Android and vast amounts of new functionality. As the main code base became increasingly unmanageable Airbnb moved towards a services orientated approach in which the application is split across a number of smaller more modular applications. The Node.js stack was incorporated into development and was used extensively for both the Airbnb mobile apps and the newly designed Airbnb search application.  Airbnb started to develop and utilize frameworks such as Nerve, Synapse and Chronos to distribute traffic and coordinate communication across the various decentralized application services.
+			</p>
+			
+			<p>
+				Airbnb also incorporated new tools and frameworks into it's data analytics. Airbnb moved away from Amazon Elastic Map Reduce towards Mesos to handle the cluster management of their data operations. The move to Mesos allowed Airbnb the ability to simultaneously make use of Hadoop together with additional big data computing software such as Spark and Storm. 
+			</p>
+			
+			<p>
+				The growth of airbnb together with the increasingly complex technology stack necessitated new development practices and production methods. Airbnb quickly improved their use of git by utilizing pull requests, ensuring that new code reaching production was always validated. Vagrant together with Chef was used to create a local development environment across multiple Linux instances that closely resembled the production environment. Due to the aforementioned scope of the overall Airbnb application, testing would often take a prohibitively long time. To counter this, Solano was integrated across the development environment allowing tests to run across multiple, parallel processes. Finally, testing methods were refactored so that Airbnb service applications could be tested piecewise. Together these new methods greatly increased deployment efficiency.
+			</p>
+			
+			<p>
+				Overall, we see that the technology stack of Airbnb is powerful, complex and highly distributed. This is necessary to manage both the extremely high traffic and the varied application technology. Both relational and non-relational databases handle user information as well as large and diverse user driven data sets. A large number of modular services built from different technology stacks combine together to form the complete Airbnb application. The many decentralized server instances are coordinated and balanced by cluster and process management software and frameworks, each optimized for a particular task.
+			</p>
+			
+			<h2>Sources</h2>
+			<p>
+			<a href = "http://en.wikipedia.org/wiki/Airbnb">http://en.wikipedia.org/wiki/Airbnb</a> 
+			</p>
+			<p>
+			<a href = "http://www.citeworld.com/article/2365284/cloud-computing/how-airbnb-used-amazon-web-services-to-conquer-the-rental-market.html">http://www.citeworld.com/article/2365284/cloud-computing/how-airbnb-used-amazon-web-services-to-conquer-the-rental-market.html</a> 
+			</p>
+			<p>
+			<a href = "http://aws.amazon.com/solutions/case-studies/airbnb/">http://aws.amazon.com/solutions/case-studies/airbnb/</a> 
+			</p>
+			<p>
+			<a href = "https://blog.dylants.com/2013/03/09/two-tech-stacks-two-backbone-apps/">https://blog.dylants.com/2013/03/09/two-tech-stacks-two-backbone-apps/</a> 
+			</p>
+			<p>
+			<a href = "https://gigaom.com/2013/07/29/airbnb-is-engineering-itself-into-a-data-driven-company/">https://gigaom.com/2013/07/29/airbnb-is-engineering-itself-into-a-data-driven-company/</a> 
+			</p>
+			<p>
+			<a href = "http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/">http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/</a>
+			</p>
+			<p>
+			<a href = "http://nerds.airbnb.com/smartstack-service-discovery-cloud/">http://nerds.airbnb.com/smartstack-service-discovery-cloud/</a> 
+			</p>
+			<p>
+			<a href = "http://nerds.airbnb.com/distributed-computing-at-airbnb/">http://nerds.airbnb.com/distributed-computing-at-airbnb/</a> 
+			</p>
+			<p>
+			<a href = "http://nerds.airbnb.com/testing-at-airbnb/">http://nerds.airbnb.com/testing-at-airbnb/</a>
+			</p>
+		</div>
+	
+	
+	</body>
+
+</html>
